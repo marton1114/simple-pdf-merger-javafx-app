@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.control.FXMLMainSceneController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="150.0">
+               <children>
+                  <Label text="Válaszd ki a páros oldalakat" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#chooseFiles0" text="Tallózás" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="139.0" prefHeight="30.0" prefWidth="150.0">
+               <children>
+                  <Label text="Válaszd ki a páratlan oldalakat" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#chooseFiles1" text="Tallózás" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="266.0" prefHeight="30.0" prefWidth="150.0">
+               <children>
+                  <Label text="Fájlok egyesítése" />
+               </children>
+            </HBox>
+            <Button fx:id="saveButton" disable="true" mnemonicParsing="false" onAction="#generateFile" text="Mentés" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
